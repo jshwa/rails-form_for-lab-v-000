@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resourses :students, only: [:new, :create, :show, :edit, :update]
+  resources :students, only: [:new, :create, :show, :edit, :update]
 
 
   get 'school_class/new'
