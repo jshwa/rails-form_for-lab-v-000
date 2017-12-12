@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
-  get 'students/new'
 
-  get 'students/create'
+  resourses :students, only: [:new, :create, :show, :edit, :update]
 
-  get 'students/show'
-
-  get 'students/edit'
-
-  get 'students/update'
 
   get 'school_class/new'
 
